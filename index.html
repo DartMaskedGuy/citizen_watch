@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Citizen Watch</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-action-btns d-flex space-between">
+            <a href="#" class="btn btn-primary open-report">Send Report</a>
+            <div class="send-report-wrapper">
+                <div class="send-report-wrapper-top d-flex">
+                    <i class="bi bi-x close-report"></i>
+                    <h2 class="text-center">Send Report</h2>
+                </div>
+                <div class="send-report-body">
+                    <form>
+                        <div class="casualties">
+                            <p>Casualties</p>
+                            <div class="casualties-opt d-flex">
+                                <div>
+                                    <label for="yes">Yes </label>
+                                    <input type="radio" name="casualties" value="yes">
+                                </div>
+                                <div>
+                                    <label for="no">No </label>
+                                    <input type="radio" name="casualties" value="no">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="location-details">
+                            <label for="location-details">Location Details</label>
+                            <input type="text" name="location-details" placeholder="Enter the location" required>
+                        </div>
+                        <div>
+                            <label for="send-media">Send media (Optional)</label>
+                            <input type="file" name="send-media">
+                            <div class="media-image"></div>
+                        </div>
+                        <div class="send-btn-wrapper">
+                            <input type="button" class="btn btn-primary" value="Send Report">
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <a href="tel:112" class="btn btn-secondary d-flex">
+                <i class="bi bi-telephone-fill"></i> Call
+            </a>
+        </div>
+        <hr>
+        <ul class="nav-icons d-flex space-around">
+            <li>
+                <i class="navbar-item dashboard-icon bi bi-house-fill active"></i>
+            </li>
+            <li>
+                <i class="navbar-item safety-tips-icon bi bi-signal"></i>
+            </li>
+            <li>
+                <i class="navbar-item profile-icon bi bi-person-fill"></i>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Dashboard -->
+        <section class="dashboard">
+            <header class="dashboard-header">
+                <div class="header-top d-flex space-between">
+                    <h2>Citizen Watch</h2>
+                    <div class="header-actions">
+                        <i class="bi bi-search open-search"></i>
+                        <i class="bi bi-bell-fill notifications open-notis"></i>
+                        <div class="notification-wrapper">
+                            <div class="notification-box">
+                                <div class="top d-flex">
+                                    <h3 class="text-center">Notifications</h3>
+                                    <i class="bi bi-x close-notis"></i>
+                                </div>
+                                <hr>
+                                <ul class="notification-list">
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span>Norma just shared an update.</span>
+                                        <i class="bi bi-three-dots"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Search Wrapper -->
+                <div class="search-wrapper">
+                    <div class="search-wrapper-top d-flex">
+                        <i class="bi bi-chevron-left close-search"></i>
+                        <div class="search-bar d-flex">
+                            <i class="bi bi-search"></i>
+                            <input type="text" id="search-box" placeholder="Search for Incidents..." autocomplete="off">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="categories-wrapper">
+                        <h4>Select Category</h4>
+                        <div class="d-flex space-between">
+                            <div class="category-box text-center">
+                                <i class="bi bi-bandaid-fill"></i>
+                                <p>Riot</p>
+                            </div>
+                            <div class="category-box text-center">
+                                <i class="bi bi-truck"></i>
+                                <p>Fire</p>
+                            </div>
+                            <div class="category-box text-center">
+                                <i class="bi bi-droplet-fill"></i>
+                                <p>Accident</p>
+                            </div>
+                            <div class="category-box text-center">
+                                <i class="bi bi-building"></i>
+                                <p>Police</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="scroll-search">
+                        <div class="post">
+                            <img src="img/post/post1.jpg">
+                            <div class="details">
+                                <div class="post-location d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p>Ikeja, Nigeria.</p>
+                                </div>
+                                <ul>
+                                    <li>Incident: Fire Outbreak</li>
+                                    <li>Casualties: Yes</li>
+                                    <li>Time: 22:02</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="img/post/post1.jpg">
+                            <div class="details">
+                                <div class="post-location d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p>Ogun.</p>
+                                </div>
+                                <ul>
+                                    <li>Incident: Riot</li>
+                                    <li>Casualties: Yes</li>
+                                    <li>Time: 22:02</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="img/post/post1.jpg">
+                            <div class="details">
+                                <div class="post-location d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p>Ikeja, Nigeria.</p>
+                                </div>
+                                <ul>
+                                    <li>Incident: Fire Outbreak</li>
+                                    <li>Casualties: Yes</li>
+                                    <li>Time: 22:02</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src="img/post/post1.jpg">
+                    <div class="details">
+                        <div class="post-location d-flex">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Ikeja, Nigeria.</p>
+                        </div>
+                        <ul>
+                            <li>Incident: Fire Outbreak</li>
+                            <li>Casualties: Yes</li>
+                            <li>Time: 22:02</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="img/post/post1.jpg">
+                    <div class="details">
+                        <div class="post-location d-flex">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Ikeja, Nigeria.</p>
+                        </div>
+                        <ul>
+                            <li>Incident: Fire Outbreak</li>
+                            <li>Casualties: Yes</li>
+                            <li>Time: 22:02</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="img/post/post1.jpg">
+                    <div class="details">
+                        <div class="post-location d-flex">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Ikeja, Nigeria.</p>
+                        </div>
+                        <ul>
+                            <li>Incident: Fire Outbreak</li>
+                            <li>Casualties: Yes</li>
+                            <li>Time: 22:02</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Safety Tips -->
+        <section class="safety-tips">
+            <header class="safety-tips-header">
+                <div class="header-top">
+                    <h2>Safety Tips</h2>
+                </div>
+            </header>
+            <div class="wrapper safety-tips-wrapper">
+                <div class="hero">
+                    <img src="img/img5.png">
+                </div>
+                <div class="safety-guidelines">
+                    <div class="top">
+                        <a href="#">See all</a>
+                    </div>
+                    <div class="d-flex sliders">
+                        <div class="box">
+                            <img src="img/img1.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="img/img2.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="img/img3.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="img/img4.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="img/img4.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="img/img4.png">
+                            <br>
+                            <p>
+                                If a fire occurs in your home,
+                                <strong>GET OUT, STAY OUT AND CALL FOR HELP.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Profile -->
+        <section class="profile">
+            <header class="">
+                <div class="header-top d-flex">
+                    <h2>Profile</h2>
+                    <a href="login.html" class="logout d-flex">Logout
+                        <i class="bi bi-door-open-fill"></i>
+                    </a>
+                </div>
+            </header>
+            <div class="profile-body">
+                <div class="top">
+                    <div class="profile-img">
+                        <img src="img/profile.jpeg">
+                    </div>
+
+                </div>
+                <div class="bottom text-center">
+                    <div class="profile-location d-flex">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>Ikeja, Nigeria.</p>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <i class="bi bi-person-fill"></i>
+                            Olatona Moyinoluwa
+                        </li>
+                        <li>@DartMaskedGuy</li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            moyinthegreat@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/jquery2.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
